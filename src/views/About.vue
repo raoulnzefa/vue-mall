@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
+  <div class="us-about us-body">
     <h1>This is an about page</h1>
   </div>
 </template>
+<script>
+export default {
+  name: 'about',
+  components: {
+
+  },
+  data() {
+  	return {
+
+  	}
+  },
+}
+</script>
