@@ -252,16 +252,16 @@ export default {
   margin-bottom:15px;
 }
 
-.us-user-home .us-middle .us-cell {
+.us-user-home .us-cell {
   padding:0;
 }
 
-.us-user-home .us-middle .us-title {
+.us-user-home .us-title {
   text-align:left;
   font-weight:bold;
 }
 
-.us-user-home .us-middle .us-value {
+.us-user-home .us-value {
   font-size:13px;
 }
 </style>>

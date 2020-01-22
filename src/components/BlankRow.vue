@@ -1,4 +1,3 @@
-
 <template>
   <div class="us-blank-row" :style="style">
   </div>

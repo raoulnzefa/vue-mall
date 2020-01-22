@@ -64,7 +64,8 @@ export default {
 
   .us-panel > .us-panel-header {
     color: #333;
-    border-radius: 8px 8px 0 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius:  8px;
     border-bottom: 1px solid #f2f2f2;
   }
 
@@ -128,9 +129,13 @@ export default {
 
   .us-panel-footer {
     background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #f2f2f2;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+  }
+
+  .us-panel-default > .us-panel-footer {
+    background-color: #fff;
   }
 
   .us-panel-padding-small .us-panel-header, .us-panel-padding-small .us-panel-body, .us-panel-padding-small .us-panel-footer {

@@ -13,14 +13,6 @@
 	  <div slot="action" @click="onSearch">搜索</div>
 	</van-search>
 
-	<!-- tab -->
-	<van-tabs v-model="tabActive" border="false">
-	  <van-tab title="推荐"></van-tab>
-	  <van-tab title="热卖"></van-tab>
-	  <van-tab title="新品"></van-tab>
-	  <van-tab title="网红"></van-tab>
-	</van-tabs>
-
 	<!-- swipe -->
 	<van-swipe :autoplay="3000" :height="120">
 	  <van-swipe-item v-for="(image, index) in images" :key="index">
@@ -32,7 +24,7 @@
 	  </van-swipe-item>
 	</van-swipe>
 
-	<van-grid :gutter="10" style="margin: 10px 0;">
+	<van-grid :gutter="12" style="margin: 10px 0;">
 	  <van-grid-item
 	    icon="photo-o"
 	    dot
@@ -91,10 +83,10 @@ export default {
   data() {
     return {
       images: [
-        'https://img.yzcdn.cn/vant/apple-1.jpg',
-        'https://img.yzcdn.cn/vant/apple-2.jpg',
-        'https://img.yzcdn.cn/vant/apple-3.jpg',
-        'https://img.yzcdn.cn/vant/apple-4.jpg'
+        'https://img.alicdn.com/imgextra/i4/144/O1CN017u18at1CvzcHfjX50_!!144-0-luban.jpg',
+        'https://img.alicdn.com/imgextra/i4/168/O1CN01txnE861D6z7dDQlgG_!!168-0-luban.jpg',
+        'https://img.alicdn.com/simba/img/TB1xRt8uhD1gK0jSZFySuwiOVXa.jpg_q50.jpg',
+        'https://gw.alicdn.com/imgextra/i3/104/O1CN01YeZyGj1Cdfm2Fk6MH_!!104-0-lubanu.jpg'
       ],
       tabActive: 0,
       searchValue: ""
