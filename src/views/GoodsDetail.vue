@@ -13,7 +13,7 @@
 	<goods-detail-image-list :imageList="imageList"/>
 
 	<div class="us-padding-large us-text-left">
-	  <span class="us-color-red" style="font-size: 28px;">¥588</span>
+	  <span class="us-color-red us-font-h2">¥588</span>
 	  <blank-span width="5" />
 	  <span class="us-line-delete us-color-gray">¥1098</span>
 	</div>

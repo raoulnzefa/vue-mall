@@ -35,6 +35,10 @@ import {
     Area,
     Panel,
     Button,
+    Checkbox,
+    CheckboxGroup,
+    Stepper,
+    SubmitBar,
 } from 'vant';
 
 Vue.config.productionTip = false
@@ -70,6 +74,10 @@ Vue.use(Search)
 	.use(Area)
 	.use(Panel)
 	.use(Button)
+	.use(Checkbox)
+	.use(CheckboxGroup)
+	.use(Stepper)
+	.use(SubmitBar)
 
 
 new Vue({

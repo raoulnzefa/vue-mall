@@ -77,11 +77,11 @@ export default {
 <style lang="less">
 .us-service-info-list .us-service-info {
   padding:8px 10px;
-}
 
-.us-service-info .info-desc {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 13px;
+  .info-desc {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+  }
 }
 </style>

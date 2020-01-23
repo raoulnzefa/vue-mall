@@ -38,12 +38,14 @@
     </van-search>
 
     <div class="us-order-list-box us-padding-h-large">
-      <order class="us-order-box" v-for="(orderInfo, index) in orderList" :key="index" :order-info="orderInfo" />
+      <div v-if="orderList && orderList.length > 0">
+        <order class="us-order-box" v-for="(orderInfo, index) in orderList" :key="index" :order-info="orderInfo" />
+      </div>
+      <no-order v-else />
     </div>
 
     <br/>
     <br/>
-
     <bottom-tab-bar active="1" />
 
     <under-layer />
@@ -53,7 +55,7 @@
 import BottomTabBar from '@/components/BottomTabBar.vue'
 import UnderLayer from '@/components/UnderLayer.vue'
 import Order from '@/components/Order.vue'
-
+import NoOrder from '@/components/NoOrder.vue'
 
 export default {
   name: 'OrderList',
@@ -61,6 +63,7 @@ export default {
     BottomTabBar,
     UnderLayer,
     Order,
+    NoOrder,
   },
   data() {
   	return {
@@ -85,36 +88,6 @@ export default {
               amount: 5,
               attributes: "卡其色-L码",
               feature: "七天无理由退换",
-            }
-          ]  
-        },
-        {
-          id: 2,
-          shop: {
-            id: 302,
-            name: "小鱼儿的店"
-          },
-          amount:3,
-          total:91.80,
-          status: 2,
-          goodsList: [
-            {
-              id: 22,
-              caption: "车载手机支架无线充电器汽车导航出风口自动感应通用苹果华为车用",
-              image: "https://img.alicdn.com/imgextra/i2/725108714/O1CN01NphujP2EF3tEnoUva_!!0-item_pic.jpg_200x200.jpg",
-              price: 5.90,
-              amount: 2,
-              attributes: "极速发货",
-              feature: "公益捐赠0.01元",
-            },
-            {
-              id: 23,
-              caption: "欧式真皮沙发组合客厅 小户型123轻奢黑檀色实木雕花整装奢华家具",
-              image: "https://img.alicdn.com/imgextra/i4/2790824257/O1CN01694vAg1hJkbTYuvSB_!!2790824257.jpg_200x200.jpg",
-              price: 80,
-              amount: 1,
-              attributes: "定制款;组合",
-              feature: "公益捐赠0.02元",
             }
           ]  
         },
@@ -175,5 +148,13 @@ export default {
 
   .us-order-list-search .van-cell {
     line-height: 20px;
+  }
+
+  .us-order-list .van-tab {
+    flex-basis: 20% !important;
+  }
+
+  .us-order-list .van-button__text, .us-order-list .van-field__control {
+    font-size:13px;
   }
 </style>

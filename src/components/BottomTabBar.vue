@@ -3,7 +3,7 @@
   <van-tabbar
     class="us-bottom-tab-bar"
     v-model="activeIndex"
-    inactive-color="#000"
+    inactive-color="gray"
     @change="onChange"
   >
     <van-tabbar-item icon="home-o">首页</van-tabbar-item>
@@ -49,3 +49,17 @@ export default {
   }
 }
 </script>
+
+
+<style lang="less">
+  .us-bottom-tab-bar {
+    .van-tabbar {
+      height:45px;
+    }
+
+    .van-tabbar-item__icon {
+      margin-bottom:3px;
+      font-size:20px;
+    }
+  }
+</style>>

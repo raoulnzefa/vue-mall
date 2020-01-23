@@ -13,7 +13,7 @@
          <div class="us-text-caption van-multi-ellipsis--l2">{{ goods.caption }}</div>
          <div class="us-text-price us-padding-v-large">
           <span class="us-color-red">¥ {{ goods.price }}</span>
-          <span class="us-color-gray us-font-12" style="margin-left:5px;">{{ goods.orderCount }} 人已购买</span>
+          <span class="us-color-gray us-font-12 us-margin-left-small">{{ goods.orderCount }} 人已购买</span>
         </div>
       </div>
     </van-grid-item>
@@ -65,31 +65,39 @@ export default {
 }
 </script>
 
-<style type="text/css">
-.us-home-goods-list .van-grid-item__content {
-  padding: 0;
-  background-color:#f2f2f2;
+<style lang="less">
+.us-home-goods-list {
+  .van-grid-item__content {
+    padding: 0;
+    background-color:#f2f2f2;
+  }
+
+  .us-img-box {
+    height: 190px;
+    width:100%;
+  }
+
+  .us-img-box {
+    height: 190px;
+    width:100%;
+  }
+
+  .us-img-box img {
+    height: 100%;
+    width: 100%;
+    border-radius:10px 10px 0 0;
+  }
+
+  .us-text {
+    background-color: #fff;
+    text-align:left;
+    border-radius:0 0 10px 10px;
+  }
+  
+  .us-text-caption {
+    padding-top:15px;
+    font-size:14px;
+  }
 }
 
-.us-home-goods-list .us-img-box {
-  height: 190px;
-  width:100%;
-}
-
-.us-home-goods-list .us-img-box img {
-  height: 100%;
-  width: 100%;
-  border-radius:10px 10px 0 0;
-}
-
-.us-home-goods-list .us-text {
-  background-color: #fff;
-  text-align:left;
-  border-radius:0 0 10px 10px;
-}
-
-.us-text-caption {
-  padding-top:15px;
-  font-size:14px;
-}
 </style>

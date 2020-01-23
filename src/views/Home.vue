@@ -14,17 +14,17 @@
 	</van-search>
 
 	<!-- swipe -->
-	<van-swipe :autoplay="3000" :height="120">
+	<van-swipe :autoplay="3000" :height="130">
 	  <van-swipe-item v-for="(image, index) in images" :key="index">
 	    <van-image 
-	    	fit="scale-down"
+	    	fit="contain"
 	    	lazy-load
 	    	:src="image" 
 	    />
 	  </van-swipe-item>
 	</van-swipe>
 
-	<van-grid :gutter="12" style="margin: 10px 0;">
+	<van-grid :gutter="12" class="us-margin-v-large">
 	  <van-grid-item
 	    icon="photo-o"
 	    dot
@@ -59,6 +59,10 @@
 	    text="水果"
 	  />
 	</van-grid>
+
+	<div class="us-padding-v-large">
+		<img height="20px" src="https://img.alicdn.com/tfs/TB1V2eQrKSSBuNjy0FlXXbBpVXa-966-114.png">
+	</div>
 
 	<home-goods-list />
 

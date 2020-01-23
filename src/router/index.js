@@ -1,11 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import Home from '../views/Home.vue'
+
 import GoodsDetail from '../views/GoodsDetail.vue'
+
 import UserHome from '../views/UserHome.vue'
+
 import AddressList from '../views/AddressList.vue'
 import AddressEdit from '../views/AddressEdit.vue'
+
 import OrderList from '../views/OrderList.vue'
+
+import CartList from '../views/CartList.vue'
 
 Vue.use(VueRouter)
 
@@ -55,6 +62,13 @@ const routes = [
     path: '/orders',
     name: 'orderList',
     component: OrderList
+  },
+
+  //cart
+  {
+    path: '/carts',
+    name: 'cartList',
+    component: CartList
   },
 ]
 

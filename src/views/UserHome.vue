@@ -1,7 +1,7 @@
 <template>
   <!-- personal center page -->
   <div class="us-user-home us-body">
-    <div class="us-top">
+    <div class="us-top us-background-theme">
       <div>
         <div class="us-col us-col-2">
           <van-image
@@ -220,7 +220,6 @@ export default {
 .us-user-home .us-top {
   color:white;
   padding:25px 12px 18px 12px;
-  background-color: rgb(251, 85, 31);
 }
 
 .us-user-home {
