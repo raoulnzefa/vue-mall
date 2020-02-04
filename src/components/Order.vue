@@ -100,7 +100,7 @@ export default {
   }
 
   .us-order_goods-desc > div {
-      padding:1px 0;
+      padding:2px 0;
   }
 }
 </style>                                       

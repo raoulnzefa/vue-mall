@@ -11,6 +11,7 @@ import AddressList from '../views/AddressList.vue'
 import AddressEdit from '../views/AddressEdit.vue'
 
 import OrderList from '../views/OrderList.vue'
+import OrderSubmit from '../views/OrderSubmit.vue'
 
 import CartList from '../views/CartList.vue'
 
@@ -62,6 +63,11 @@ const routes = [
     path: '/orders',
     name: 'orderList',
     component: OrderList
+  },
+    {
+    path: '/orders/submit',
+    name: 'orderSubmit',
+    component: OrderSubmit
   },
 
   //cart

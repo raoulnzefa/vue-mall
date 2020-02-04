@@ -4,8 +4,8 @@
 	  title="商品详情"
 	  left-text="返回"
 	  left-arrow
-	  @click-left="onClickLeft"
-	  @click-right="onClickRight"
+	  @click-left="goBack"
+	  @click-right="goCarts"
 	>
 	  <van-icon name="cart-o" slot="right" size="24"/>
 	</van-nav-bar>
@@ -78,8 +78,8 @@
 	  <van-goods-action-icon icon="shop-o" text="店铺"/>
 	  <van-goods-action-icon icon="chat-o" text="客服" />
 	  <van-goods-action-icon icon="star" text="已收藏" :color="storeColor" />
-	  <van-goods-action-button type="warning" text="加入购物车" />
-	  <van-goods-action-button type="danger" text="立即购买" />
+	  <van-goods-action-button type="warning" text="加入购物车" @click="addCart" />
+	  <van-goods-action-button type="danger" text="立即购买" @click="goOrderSubmit" />
   	</van-goods-action>
   </div>
 </template>
@@ -124,33 +124,42 @@ export default {
   	}
   }, 	
   methods: {
-    onClickLeft() {
+    goBack() {
       this.$router.go(-1);
     },
-    onClickRight() {
-      Toast('按钮');
-    }
+    goCarts() {
+      this.$router.push("/carts");
+    },
+    addCart() {
+
+    },
+    goOrderSubmit() {
+    	this.$router.push("/orders/submit");
+    },
   }
 }
 </script>
 
 <style lang="less">
-@orange:#ff976a;
+.us-goods-detail {
+	background-color:#fff;
 
-.us-goods-detail .us-goods-coupon .van-tag {
-	float:left;
-	margin-right:15px;
+	.us-goods-coupon {
+		.van-tag {
+			float:left;
+			margin-right:15px;
+		}
+
+		.us-coupon-get {
+			cursor:pointer;
+			float: right;
+			color:#ff976a;
+			font-size: 13px;
+		}
+	}
+
+	.van-nav-bar .van-nav-bar__right .van-icon {
+		color:#ff976a;
+	}
 }
-
-.us-goods-coupon .us-coupon-get {
-	cursor:pointer;
-	float: right;
-	color:#ff976a;
-	font-size: 13px;
-}
-
-.us-goods-detail .van-nav-bar .van-nav-bar__right .van-icon {
-	color:@orange;
-}
-
 </style>

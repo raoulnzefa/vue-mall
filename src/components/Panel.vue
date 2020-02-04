@@ -17,6 +17,7 @@
  * Props
  * :type 面板样式 String  可选值 default|primary|success|info|warning|danger 默认:default
  * :padding-size String 内边距大小 可选值：small|midium|large|none  默认：large
+ * :border Boolean 是否存在边框 可选值: true|false 默认：true
  *
  * Slots
  * default
@@ -38,12 +39,19 @@ export default {
       type: String,
       default: "large"
     },
+    border: {
+      type: Boolean,
+      default: true,
+    }
   },
   methods: {
     getClass() {
       var c = "us-panel us-panel-" + this.type;
       if (!this.emptyString(this.paddingSize)) {
         c = c + " us-panel-padding-" + this.paddingSize;
+      }
+      if (this.border === false) {
+        c = c + " us-panel-no-border";
       }
       return c;
     }
@@ -67,6 +75,10 @@ export default {
     border-top-left-radius: 8px;
     border-top-right-radius:  8px;
     border-bottom: 1px solid #f2f2f2;
+  }
+
+  .us-panel-no-border > .us-panel-header {
+    border-width: 0;
   }
 
   .us-panel-default {
@@ -132,6 +144,10 @@ export default {
     border-top: 1px solid #f2f2f2;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+  }
+
+  .us-panel-no-border > .us-panel-footer {
+    border-width: 0;
   }
 
   .us-panel-default > .us-panel-footer {
