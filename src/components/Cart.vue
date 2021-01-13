@@ -25,7 +25,7 @@
         <div class="us-cart_goods-list">
           <van-row class="us-cart_goods" v-for="(goods, goodsIndex) in info.goodsList" :key="goodsIndex">
             <van-col span="7" class="us-text-left">
-              <van-image width="5.5rem" height="5.5rem" radius="5.5px":src="goods.image"/>
+              <van-image width="4.5rem" height="4.5rem" radius="5px":src="goods.image"/>
             </van-col>
 
             <van-col span="17" class="us-cart_goods-desc us-text-left us-font-h5">
@@ -81,58 +81,4 @@ export default {
   methods: {
   }
 }
-</script>    
-
-<style lang="less">
-.us-cart {
-  .us-cart_cell {
-    padding:0;
-  }
-
-  .us-cart_title {
-    text-align:left;
-    font-size: 13px;
-  }
-
-  .us-cart_value {
-    font-size:13px;
-    color:gray;
-  }
-
-  .us-cart_goods {
-    margin-bottom: 10px;
-  }
-
-  .us-cart_goods-desc > div {
-    padding:2px 0;
-  }
-
-  .van-stepper__minus {
-    color:#bcbcbc;
-  }
-
-  .van-stepper__minus::before {
-    width:10px;
-  }
-
-  .van-stepper__minus::after {
-    width:10px;
-  }
-
-  .van-stepper__plus {
-    color:#bcbcbc;
-  }
-
-  .van-stepper__plus::before {
-    width:10px;
-  }
-
-  .van-stepper__plus::after {
-    height:9px;
-  }
-
-  .van-stepper__input {
-    font-size:12px;
-  }
-} 
-</style>                                       
+</script>                                          

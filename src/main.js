@@ -4,6 +4,9 @@ import router from './router'
 import store from './store'
 import base from './base'
 import './assets/css/base.less'
+import './assets/css/order.less'
+import './assets/css/goods.less'
+import './assets/css/cart.less'
 
 import {
 	Search,

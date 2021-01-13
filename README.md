@@ -1,4 +1,5 @@
-# vue-demo
+# Mall Template
+a shopping mall template for mobile terminal, based on VUE.
 
 ## Project setup
 ```

@@ -39,40 +39,4 @@ export default {
 
   }
 }
-</script>
-
-<style lang="less">
-  .us-order-address {
-    background-color:#fff;
-    padding: 10px 2px;
-
-    .us-order-address_icon {
-
-      .van-icon {
-        top: 1rem;
-      }
-    }
-
-    .us-order-address_text {
-      text-align:left;
-
-      > div {
-        padding: 0;
-        font-size:12px;
-      }
-
-      .us-order-address_name {
-        font-size:14px;
-      }
-
-      .us-order-address_mobile {
-        margin-left:5px;
-        color:gray;
-      }
-
-      .us-order-address_remark > div {
-        color:#ff5000;
-      }
-    }
-  }
-</style>>                                           
+</script>                                          

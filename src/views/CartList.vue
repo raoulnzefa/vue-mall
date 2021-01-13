@@ -117,16 +117,3 @@ export default {
   }
 }
 </script>
-
-<style lang="less">
-  .us-cart-list {
-    .us-cart-list_header {
-      color:#fff;
-    }
-    
-    .van-submit-bar {
-      bottom:45px;
-    }
-  }
-
-</style>

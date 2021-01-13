@@ -13,7 +13,7 @@
     <div class="us-order_goods-list us-font-h6">
       <van-row class="us-order_goods" v-for="(goods, goodsIndex) in info.goodsList" :key="goodsIndex">
         <van-col span="6" class="us-text-left">
-          <van-image width="6rem" height="6rem" radius="5px":src="goods.image"/>
+          <van-image width="4.7rem" height="4.7rem" radius="5px":src="goods.image"/>
         </van-col>
         <van-col span="14" class="us-order_goods-desc us-text-left us-padding-h-large">
           <div class="van-multi-ellipsis--l2">{{ goods.caption }}</div>

@@ -137,24 +137,3 @@ export default {
   }
 }
 </script>
-
-<style type="text/css">
-  .us-order-list {
-    background-color: #f2f2f2;
-  }
-  .us-order-list-search .van-search__content {
-    background-color: #fff;
-  }
-
-  .us-order-list-search .van-cell {
-    line-height: 20px;
-  }
-
-  .us-order-list .van-tab {
-    flex-basis: 20% !important;
-  }
-
-  .us-order-list .van-button__text, .us-order-list .van-field__control {
-    font-size:13px;
-  }
-</style>

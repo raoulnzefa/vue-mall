@@ -139,27 +139,3 @@ export default {
   }
 }
 </script>
-
-<style lang="less">
-.us-goods-detail {
-	background-color:#fff;
-
-	.us-goods-coupon {
-		.van-tag {
-			float:left;
-			margin-right:15px;
-		}
-
-		.us-coupon-get {
-			cursor:pointer;
-			float: right;
-			color:#ff976a;
-			font-size: 13px;
-		}
-	}
-
-	.van-nav-bar .van-nav-bar__right .van-icon {
-		color:#ff976a;
-	}
-}
-</style>
